@@ -1,0 +1,26 @@
+.is-done {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.is-done:hover {
+    text-decoration: line-through;
+    text-decoration-color: red;
+  }
+
+ol {
+  cursor: pointer;
+}
+
+.far {
+justify-content: flex-end;
+}
+
+body {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 1.5em;
+}
+
+.container {
+  width: 600px;
+}
