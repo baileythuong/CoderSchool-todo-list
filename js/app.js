@@ -32,7 +32,7 @@ function renderTodos(arr) {
   let status;
   const html = arr
     .map((item, i) => {
-      if (item.isDone === true) {
+      if (item.isDone === true && item.description !== "") {
         // status = "mark undone";
       } else if (item.isDone === false) {
         // status = "mark done";
