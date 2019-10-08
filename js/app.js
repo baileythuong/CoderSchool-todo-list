@@ -1,7 +1,5 @@
 // set local storage
 function getAppState() {
-
-
     return (
       JSON.parse(localStorage.getItem("appState")) || [
           {
@@ -42,7 +40,7 @@ function renderTodos(arr) {
         item.isDone ? "is-done" : ""
       }"><span class="px-5" onclick="toggleDone(${i})">${
         item.description
-      }</span><span onclick="remove(${i})"><i class="far fa-trash-alt"></i></span></li>`;
+      }</span><span onclick="remove(${i})"><span><i class="far fa-trash-alt" class="float-right"></span></i></span></li>`;
     })
     .join("");
   document.getElementById("result").innerHTML = html;
